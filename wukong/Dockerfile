@@ -3,7 +3,7 @@ MAINTAINER wzpan
 ENV LANG C.UTF-8
 WORKDIR /root/wukong-robot
 RUN git pull -f
-RUN pip3 install -r requirements.txt
+RUN pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
 WORKDIR /root/.wukong/contrib
 RUN git pull -f
 RUN pip3 install -r requirements.txt
